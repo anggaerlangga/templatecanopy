@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-blue-800 text-white p-4 shadow-lg">
+        <nav class="sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-30">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-white text-lg font-semibold lg:hidden">Menu</span>
+                    </div>
+
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-4 sm:items-center">
+                        <a href="#home-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Home</a>
+                        <a href="#about-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">About</a>
+                        <a href="#portfolio-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Portfolio</a>
+                        <a href="#work-process-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Work Process</a>
+                        <a href="#testimoni-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Testimoni</a>
+                    </div>
+
+                    <div class="-mr-2 flex items-center sm:hidden">
+                        <button type="button" id="mobile-menu-button" 
+                                class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+                                aria-controls="mobile-menu" aria-expanded="false">
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="sm:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home-section" class="text-white hover:bg-blue-600 block px-3 py-2 rounded-md text-base font-medium transition duration-150">Home</a>
+                    <a href="#about-section" class="text-white hover:bg-blue-600 block px-3 py-2 rounded-md text-base font-medium transition duration-150">About</a>
+                    <a href="#portfolio-section" class="text-white hover:bg-blue-600 block px-3 py-2 rounded-md text-base font-medium transition duration-150">Portfolio</a>
+                    <a href="#work-process-section" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Work Process</a>
+                    <a href="#contact-section" class="text-white hover:bg-blue-600 block px-3 py-2 rounded-md text-base font-medium transition duration-150">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section" class="bg-blue-500 text-white py-24 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-extrabold mb-4">Kami Konsultan Kanopi Terbaik Anda</h2>
+                <p class="text-xl mb-8">Spesialis Jasa Pasang Kanopi</p>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                    Mulai Sekarang
+                </button>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-4">
+                <h3 class="text-2xl md:text-3xl font-bold text-center mb-10">Mengapa Memilih Jasa Kanopi Kami?</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <div class="text-4xl text-yellow-500 mb-4">🛠️</div>
+                        <h4 class="font-semibold text-xl mb-2">Kualitas Material Terbaik</h4>
+                        <p class="text-gray-600">Hanya menggunakan material SNI seperti Baja Ringan, Galvalum, atau Besi Hollow pilihan.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <div class="text-4xl text-yellow-500 mb-4">⏱️</div>
+                        <h4 class="font-semibold text-xl mb-2">Pemasangan Cepat & Rapi</h4>
+                        <p class="text-gray-600">Tim profesional berpengalaman, menyelesaikan proyek tepat waktu dan hasil yang presisi.</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <div class="text-4xl text-yellow-500 mb-4">🛡️</div>
+                        <h4 class="font-semibold text-xl mb-2">Garansi Resmi 10 Tahun</h4>
+                        <p class="text-gray-600">Jaminan mutu konstruksi dan layanan purna jual yang profesional dan terjamin.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <div class="text-4xl text-yellow-500 mb-4">💸</div>
+                        <h4 class="font-semibold text-xl mb-2">Harga Transparan</h4>
+                        <p class="text-gray-600">Tanpa biaya tersembunyi. Dapatkan harga terbaik dengan kualitas premium di kelasnya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-12 md:py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h3 class="text-2xl md:text-3xl font-bold text-center mb-4">Lihat Hasil Proyek Kanopi Kami</h3>
+                <p class="text-center text-gray-600 mb-10">Ribuan pelanggan puas telah mempercayakan kanopinya kepada kami.</p>
+
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition">Semua</button>
+                    <button class="bg-white text-gray-800 px-4 py-2 rounded-lg border hover:bg-gray-200 transition">Kaca Tempered</button>
+                    <button class="bg-white text-gray-800 px-4 py-2 rounded-lg border hover:bg-gray-200 transition">Alderon</button>
+                    <button class="bg-white text-gray-800 px-4 py-2 rounded-lg border hover:bg-gray-200 transition">Minimalis</button>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl group">
+                        <img src="assets/kanopi1.jpeg" alt="Kanopi Minimalis" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-lg font-semibold">Kanopi Kaca Tempered</span>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-xl group">
+                        <img src="assets/kanopialderon.jpeg" alt="Kanopi Membran" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-lg font-semibold">Kanopi Minimalis</span>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-xl group">
+                        <img src="assets/kanopiplafon.jpeg" alt="Kanopi Besi Hollow" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-lg font-semibold">Kanopi Plafon PVC</span>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-xl group">
+                        <img src="assets/kanopialderon3.jpeg" alt="Kanopi Carport" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-lg font-semibold">Kanopi Alderon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-4">
+                <h3 class="text-2xl md:text-3xl font-bold text-center mb-10">Apa Kata Klien Kami?</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                        <p class="italic text-gray-700 mb-4">"Pengerjaan sangat profesional dan hasilnya rapi sekali. Kanopi carport rumah saya jadi terlihat lebih mewah. Terima kasih KanopiMax!"</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-bold">Bpk. Fandi</p>
+                                <p class="text-sm text-gray-500">Bintaro Sektor 9</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                        <p class="italic text-gray-700 mb-4">"Harga bersaing dengan kualitas baja ringan yang terjamin. Proses survei dan pemasangan sangat cepat, tidak sampai seminggu sudah selesai."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-bold">Ibu Rina</p>
+                                <p class="text-sm text-gray-500">Bekasi Timur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                        <p class="italic text-gray-700 mb-4">"Yang paling penting adalah garansinya yang jelas dan materialnya anti karat. Saya sangat merekomendasikan jasa ini!"</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-bold">Bpk. Agung</p>
+                                <p class="text-sm text-gray-500">Jakarta Selatan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8">
+                    Galeri Pilihan
+                </h2>
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                        <img 
+                            class="object-cover w-full h-48" 
+                            src="assets/kanopi1.jpeg" 
+                            alt="Deskripsi Gambar 1"
+                        >
+                        </div>
+                        <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            Judul Gambar 1
+                        </h3>
+                        <p class="text-gray-600 text-base">
+                            Deskripsi singkat untuk gambar pertama. Menjelaskan isi atau konteks dari gambar tersebut.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                        <img 
+                            class="object-cover w-full h-48" 
+                            src="assets/kanopialderon.jpeg" 
+                            alt="Deskripsi Gambar 2"
+                        >
+                        </div>
+                        <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            Judul Gambar 2
+                        </h3>
+                        <p class="text-gray-600 text-base">
+                            Deskripsi singkat untuk gambar kedua. Detail lebih lanjut tentang apa yang ditampilkan.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img class="object-cover w-full h-48" src="assets/kanopiplafon.jpeg" alt="Deskripsi Gambar 3">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Judul Gambar 3
+                            </h3>
+                            <p class="text-gray-600 text-base">
+                                Deskripsi singkat untuk gambar ketiga. Informasi relevan dan menarik.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img class="object-cover w-full h-48" src="assets/kanopialderon3.jpeg" alt="Deskripsi Gambar 4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Judul Gambar 4
+                            </h3>
+                            <p class="text-gray-600 text-base">
+                                Deskripsi singkat untuk gambar keempat. Penjelasan tambahan untuk konteks.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">Siap Memperindah Hunian Anda?</h3>
+            <p class="text-lg mb-6">Hubungi kami sekarang untuk konsultasi gratis dan mulailah proyek kanopi Anda hari ini.</p>
+            
+            <a href="https://wa.me/nomorwhatsappanda" 
+               class="cta-btn inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-10 rounded-full transition duration-300 transform hover:scale-105 mb-8">
+                📱 Konsultasi GRATIS via WhatsApp
+            </a>
+
+            <p class="text-sm text-gray-400">&copy; 2025 KanopiMax. Hak Cipta Dilindungi.</p>
+            <p class="text-sm text-gray-400">Layanan Jasa Pasang Kanopi Profesional di seluruh Jabodetabek.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
